@@ -1,0 +1,8 @@
+<app-base-enter (mechanicalStudentAdded)="students.push($event)" (electricalStudentAdded)="students.push($event)"></app-base-enter>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2 text-center" *ngFor="let student of students,let index = i">
+            <app-base-view [student]="student"></app-base-view>
+        </div>
+    </div>
+</div>
